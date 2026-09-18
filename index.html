@@ -1,0 +1,2445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Srilaxmi Menon | Human Resources Portfolio</title>
+
+<meta name="description" content="Srilaxmi Menon's professional Human Resources portfolio, featuring HR case studies, consulting projects, professional reflections and transferable capabilities.">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background: #f5f5f3;
+    color: #111111;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1120px, 90%);
+    margin: 0 auto;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(245,245,243,0.96);
+    border-bottom: 1px solid #d8d8d5;
+    backdrop-filter: blur(8px);
+}
+
+.nav-inner {
+    width: min(1120px, 90%);
+    margin: auto;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.15rem;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    font-size: 0.98rem;
+}
+
+.nav-links a {
+    position: relative;
+    padding: 5px 0;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background: #111;
+    transition: width 0.25s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 94vh;
+    display: flex;
+    align-items: center;
+    padding: 130px 0 80px;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.78rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(2.7rem, 5.5vw, 5.2rem);
+    line-height: 1;
+    letter-spacing: -1px;
+    margin-bottom: 28px;
+    white-space: nowrap;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.25rem, 2.2vw, 1.8rem);
+    max-width: 760px;
+    line-height: 1.45;
+    margin-bottom: 28px;
+}
+
+.hero-intro {
+    max-width: 720px;
+    color: #4d4d4d;
+    font-size: 1.05rem;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 14px;
+    margin-top: 38px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    border: 1px solid #111;
+    padding: 11px 21px;
+    font-size: 0.95rem;
+    transition: 0.25s ease;
+}
+
+.button.primary {
+    background: #111;
+    color: #fff;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+    padding: 105px 0;
+    border-top: 1px solid #d9d9d6;
+}
+
+.section-heading {
+    display: grid;
+    grid-template-columns: 0.7fr 2fr;
+    gap: 50px;
+    margin-bottom: 65px;
+}
+
+.section-number {
+    font-size: 0.78rem;
+    letter-spacing: 2px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    font-size: clamp(2.2rem, 5vw, 4.2rem);
+    line-height: 1.05;
+    font-weight: normal;
+}
+
+.section-heading p {
+    margin-top: 20px;
+    max-width: 700px;
+    color: #555;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 70px;
+}
+
+.about-main {
+    font-size: 1.18rem;
+}
+
+.about-main p + p {
+    margin-top: 24px;
+}
+
+.about-aside {
+    border-left: 1px solid #cfcfcb;
+    padding-left: 30px;
+}
+
+.about-aside h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.about-aside ul {
+    list-style: none;
+}
+
+.about-aside li {
+    padding: 8px 0;
+    border-bottom: 1px solid #dededb;
+}
+
+/* =========================
+   HOW I WORK
+========================= */
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: #cfcfcb;
+    border: 1px solid #cfcfcb;
+}
+
+.approach-card {
+    background: #f5f5f3;
+    padding: 32px 25px;
+    min-height: 240px;
+}
+
+.approach-card span {
+    font-size: 0.78rem;
+    color: #777;
+    letter-spacing: 2px;
+}
+
+.approach-card h3 {
+    font-size: 1.35rem;
+    margin: 28px 0 15px;
+}
+
+.approach-card p {
+    color: #555;
+    font-size: 0.96rem;
+}
+
+/* =========================
+   CAPABILITIES
+========================= */
+
+.capability-list {
+    border-top: 1px solid #bdbdb9;
+}
+
+.capability {
+    border-bottom: 1px solid #bdbdb9;
+}
+
+.capability-header {
+    width: 100%;
+    border: none;
+    background: none;
+    font-family: inherit;
+    text-align: left;
+    padding: 25px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.capability-header h3 {
+    font-size: 1.55rem;
+    font-weight: normal;
+}
+
+.capability-header span {
+    font-size: 1.4rem;
+}
+
+.capability-content {
+    display: none;
+    padding: 0 5px 30px;
+    color: #555;
+    max-width: 850px;
+}
+
+.capability-content.open {
+    display: block;
+}
+
+.evidence {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    border: 1px solid #c7c7c4;
+    padding: 5px 10px;
+    font-size: 0.82rem;
+    color: #444;
+}
+
+/* =========================
+   CASE STUDIES
+========================= */
+
+.case-study-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.case-study {
+    border: 1px solid #c9c9c5;
+    background: #f8f8f6;
+}
+
+.case-header {
+    width: 100%;
+    border: none;
+    background: none;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 28px 30px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 80px 1fr 40px;
+    gap: 25px;
+    align-items: start;
+}
+
+.case-number {
+    font-size: 0.78rem;
+    letter-spacing: 2px;
+    color: #777;
+    padding-top: 4px;
+}
+
+.case-header h3 {
+    font-size: 1.55rem;
+    font-weight: normal;
+    margin-bottom: 7px;
+}
+
+.case-type {
+    color: #666;
+    font-size: 0.92rem;
+}
+
+.case-icon {
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.case-content {
+    display: none;
+    border-top: 1px solid #d5d5d1;
+    padding: 35px 30px 40px;
+}
+
+.case-content.open {
+    display: block;
+}
+
+.case-meta {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dededb;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.case-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 55px;
+}
+
+.case-block h4 {
+    font-size: 1rem;
+    margin-bottom: 9px;
+}
+
+.case-block p {
+    color: #505050;
+}
+
+.case-block ul {
+    padding-left: 20px;
+    color: #505050;
+}
+
+.case-block li {
+    margin-bottom: 6px;
+}
+
+.confidential {
+    margin-top: 30px;
+    border-left: 2px solid #777;
+    padding: 13px 18px;
+    background: #eeeeeb;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* =========================
+   LEARNING JOURNEY
+========================= */
+
+.journey {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: #cfcfcb;
+    border: 1px solid #cfcfcb;
+}
+
+.journey-item {
+    background: #f5f5f3;
+    padding: 35px 25px;
+}
+
+.journey-item .year {
+    color: #777;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+}
+
+.journey-item h3 {
+    font-size: 1.25rem;
+    margin: 20px 0 13px;
+}
+
+.journey-item p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* =========================
+   REFLECTIONS
+========================= */
+
+.reflection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.reflection {
+    border-top: 2px solid #111;
+    padding-top: 25px;
+}
+
+.reflection h3 {
+    font-size: 1.45rem;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.reflection p {
+    color: #555;
+    font-size: 0.96rem;
+}
+
+/* =========================
+   CONSULTING
+========================= */
+
+.consulting-process {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 45px;
+}
+
+.process-step {
+    padding: 22px 15px;
+    border-right: 1px solid #ccc;
+}
+
+.process-step:last-child {
+    border-right: none;
+}
+
+.process-step span {
+    font-size: 0.75rem;
+    color: #777;
+}
+
+.process-step h3 {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* =========================
+   ENTREPRENEURSHIP
+========================= */
+
+.entrepreneurship {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 70px;
+}
+
+.entrepreneurship h3 {
+    font-size: 2.1rem;
+    font-weight: normal;
+}
+
+.entrepreneurship p {
+    color: #555;
+}
+
+.transfer-list {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: #ccc;
+    border: 1px solid #ccc;
+}
+
+.transfer-list div {
+    background: #f5f5f3;
+    padding: 15px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    padding-bottom: 120px;
+}
+
+.contact-box {
+    border: 1px solid #bdbdb9;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    background: #f8f8f6;
+}
+
+.contact-box h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: normal;
+    line-height: 1;
+}
+
+.contact-box p {
+    color: #555;
+    margin-top: 20px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+
+.contact-link {
+    border-bottom: 1px solid #c7c7c4;
+    padding-bottom: 12px;
+}
+
+.contact-link small {
+    display: block;
+    color: #777;
+    margin-bottom: 3px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    border-top: 1px solid #d0d0cc;
+    padding: 30px 0;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* =========================
+   SCROLL PROGRESS
+========================= */
+
+.progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: #111;
+    width: 0%;
+    z-index: 2000;
+}
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+.back-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #aaa;
+    background: #f5f5f3;
+    font-family: inherit;
+    cursor: pointer;
+    display: none;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 850px) {
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        background: #f5f5f3;
+        border-bottom: 1px solid #ccc;
+        flex-direction: column;
+        padding: 20px 5%;
+        gap: 15px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .hero h1 {
+        white-space: normal;
+    }
+
+    .section-heading {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .about-grid,
+    .entrepreneurship,
+    .contact-box {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .approach-grid,
+    .journey {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .case-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reflection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .consulting-process {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .process-step:nth-child(3n) {
+        border-right: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 85vh;
+    }
+
+    section {
+        padding: 75px 0;
+    }
+
+    .approach-grid,
+    .journey,
+    .consulting-process,
+    .transfer-list {
+        grid-template-columns: 1fr;
+    }
+
+    .process-step {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .process-step:last-child {
+        border-bottom: none;
+    }
+
+    .case-header {
+        grid-template-columns: 45px 1fr 25px;
+        padding: 22px 18px;
+        gap: 12px;
+    }
+
+    .case-content {
+        padding: 25px 18px 30px;
+    }
+
+    .contact-box {
+        padding: 30px 22px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="progress" id="progress"></div>
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+    <div class="nav-inner">
+
+        <a href="#top" class="logo">Srilaxmi Menon</a>
+
+        <button class="menu-button" id="menuButton" aria-label="Open navigation">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#approach">Approach</a></li>
+            <li><a href="#capabilities">Capabilities</a></li>
+            <li><a href="#case-studies">Case studies</a></li>
+            <li><a href="#learning">Learning journey</a></li>
+            <li><a href="#reflections">Reflections</a></li>
+            <li><a href="#entrepreneurship">Entrepreneurship</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+
+<main id="top">
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                Human Resources · People Operations · Learning & Development · Consulting
+            </div>
+
+            <h1>Srilaxmi Menon</h1>
+
+            <p class="hero-subtitle">
+                A people-focused HR professional interested in the relationship between
+                people, processes and organisational outcomes.
+            </p>
+
+            <p class="hero-intro">
+                This portfolio goes beyond my CV to show how I approach people-related
+                work, the projects I have contributed to, the thinking behind my work
+                and the professional lessons I have taken forward.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#case-studies" class="button primary">Explore my case studies</a>
+                <a href="#contact" class="button">Get in touch</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-number">
+                01 / About
+            </div>
+
+            <div>
+                <h2>Beyond the CV</h2>
+
+                <p>
+                    A closer look at how I think about people work, processes and
+                    professional development.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-main">
+
+                <p>
+                    My interest in Human Resources sits at the intersection of
+                    people and how organisations operate. Through experience across
+                    learning and development, HR operations, recruitment support
+                    and consulting, I have developed an appreciation for both the
+                    human experience and the operational detail behind it.
+                </p>
+
+                <p>
+                    I enjoy work that requires structure, communication and
+                    attention to detail, particularly when several stakeholders,
+                    processes or priorities need to come together.
+                </p>
+
+                <p>
+                    My approach has also been shaped by studying psychology and
+                    management, completing postgraduate study in Human Resource
+                    Management and Consulting, working across different organisational
+                    environments and independently running a small creative venture.
+                </p>
+
+            </div>
+
+
+            <aside class="about-aside">
+
+                <h3>Areas I am exploring</h3>
+
+                <ul>
+                    <li>HR operations</li>
+                    <li>People operations</li>
+                    <li>Learning and development</li>
+                    <li>Talent acquisition</li>
+                    <li>HR consulting</li>
+                    <li>Employee experience</li>
+                </ul>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     HOW I WORK
+========================= -->
+
+<section id="approach">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-number">
+                02 / Approach
+            </div>
+
+            <div>
+                <h2>How I work</h2>
+
+                <p>
+                    Four principles that have consistently influenced how I approach
+                    HR and project work.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="approach-grid">
+
+            <article class="approach-card">
+
+                <span>01</span>
+
+                <h3>Structured</h3>
+
+                <p>
+                    I break tasks into clear stages, priorities and actions so that
+                    work remains organised when several moving parts are involved.
+                </p>
+
+            </article>
+
+
+            <article class="approach-card">
+
+                <span>02</span>
+
+                <h3>Detail-conscious</h3>
+
+                <p>
+                    HR processes often depend on accurate information and consistent
+                    follow-through. I therefore pay close attention to documentation,
+                    records and deadlines.
+                </p>
+
+            </article>
+
+
+            <article class="approach-card">
+
+                <span>03</span>
+
+                <h3>People-focused</h3>
+
+                <p>
+                    I consider how processes are experienced by employees, learners,
+                    candidates and other stakeholders, rather than viewing them only
+                    from an administrative perspective.
+                </p>
+
+            </article>
+
+
+            <article class="approach-card">
+
+                <span>04</span>
+
+                <h3>Curious</h3>
+
+                <p>
+                    I like understanding why a process works the way it does and
+                    considering where practical improvements could be made.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CAPABILITIES
+========================= -->
+
+<section id="capabilities">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-number">
+                03 / Capabilities
+            </div>
+
+            <div>
+                <h2>Evidence of my capabilities</h2>
+
+                <p>
+                    Rather than simply listing skills, this section connects them
+                    to the ways I have applied them.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="capability-list">
+
+
+            <div class="capability">
+
+                <button class="capability-header">
+                    <h3>Learning and development</h3>
+                    <span>+</span>
+                </button>
+
+                <div class="capability-content">
+
+                    <p>
+                        My L&D experience gave me exposure to the operational side
+                        of learning delivery, including programme coordination,
+                        learner administration, stakeholder communication,
+                        attendance tracking, feedback and reporting.
+                    </p>
+
+                    <div class="evidence">
+                        <span class="tag">Programme coordination</span>
+                        <span class="tag">LMS administration</span>
+                        <span class="tag">Learner tracking</span>
+                        <span class="tag">Stakeholder coordination</span>
+                        <span class="tag">Learning reporting</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="capability">
+
+                <button class="capability-header">
+                    <h3>HR operations</h3>
+                    <span>+</span>
+                </button>
+
+                <div class="capability-content">
+
+                    <p>
+                        My HR operations experience has involved supporting employee
+                        lifecycle processes, onboarding, HR information, documentation
+                        and HR systems. It has strengthened my understanding of how
+                        administrative accuracy contributes to a consistent employee
+                        experience.
+                    </p>
+
+                    <div class="evidence">
+                        <span class="tag">Onboarding</span>
+                        <span class="tag">Employee lifecycle support</span>
+                        <span class="tag">Workday</span>
+                        <span class="tag">HR documentation</span>
+                        <span class="tag">HR data accuracy</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="capability">
+
+                <button class="capability-header">
+                    <h3>Recruitment support</h3>
+                    <span>+</span>
+                </button>
+
+                <div class="capability-content">
+
+                    <p>
+                        Recruitment exposure has helped me understand the importance
+                        of timely communication, organisation and candidate experience
+                        throughout recruitment coordination.
+                    </p>
+
+                    <div class="evidence">
+                        <span class="tag">Candidate communication</span>
+                        <span class="tag">Sourcing</span>
+                        <span class="tag">Interview coordination</span>
+                        <span class="tag">Candidate documentation</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="capability">
+
+                <button class="capability-header">
+                    <h3>Consulting and analysis</h3>
+                    <span>+</span>
+                </button>
+
+                <div class="capability-content">
+
+                    <p>
+                        My consulting projects developed my ability to approach
+                        unfamiliar business problems systematically, conduct research,
+                        consider market and workforce factors and translate findings
+                        into structured recommendations.
+                    </p>
+
+                    <div class="evidence">
+                        <span class="tag">Market research</span>
+                        <span class="tag">Competitor analysis</span>
+                        <span class="tag">Workforce analysis</span>
+                        <span class="tag">SWOT analysis</span>
+                        <span class="tag">Structured problem solving</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CASE STUDIES
+========================= -->
+
+<section id="case-studies">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-number">
+                04 / Case studies
+            </div>
+
+            <div>
+                <h2>Selected work</h2>
+
+                <p>
+                    Open each case study to explore the situation, my role,
+                    approach, outcomes and what I took forward from the experience.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="case-study-list">
+
+
+            <!-- CASE STUDY 01 -->
+
+            <article class="case-study">
+
+                <button class="case-header">
+
+                    <span class="case-number">01</span>
+
+                    <div>
+                        <h3>Coordinating learning delivery</h3>
+                        <p class="case-type">
+                            Case Study · International retail and property group · Learning and development
+                        </p>
+                    </div>
+
+                    <span class="case-icon">+</span>
+
+                </button>
+
+
+                <div class="case-content">
+
+                    <div class="case-meta">
+                        Learning and development internship · 10+ programmes · 200+ participants
+                    </div>
+
+
+                    <div class="case-grid">
+
+                        <div class="case-block">
+                            <h4>Situation</h4>
+                            <p>
+                                Multiple learning programmes involved learners,
+                                facilitators, HR stakeholders, venues, virtual
+                                arrangements and administrative requirements.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Challenge</h4>
+                            <p>
+                                Effective delivery required coordination across
+                                different stages of the learner journey while
+                                maintaining accurate programme information.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>My role</h4>
+                            <p>
+                                I supported the operational coordination of learning
+                                programmes and acted as a point of contact for
+                                learners, facilitators and HR stakeholders.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Approach</h4>
+
+                            <ul>
+                                <li>Tracked programme and learner information.</li>
+                                <li>Coordinated communications and reminders.</li>
+                                <li>Supported attendance and nominee updates.</li>
+                                <li>Coordinated practical delivery requirements.</li>
+                                <li>Maintained programme and budget information.</li>
+                            </ul>
+
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Implementation</h4>
+
+                            <p>
+                                I supported Learning Management System administration,
+                                learner communications, attendance tracking, feedback
+                                collection, reporting and coordination with relevant
+                                stakeholders throughout programme delivery.
+                            </p>
+
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Outcome</h4>
+
+                            <p>
+                                I supported the delivery of 10+ corporate learning
+                                programmes reaching more than 200 participants, with
+                                reported on-time execution across the programme slate.
+                            </p>
+
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>What I learned</h4>
+
+                            <p>
+                                Learning delivery is influenced by much more than the
+                                learning session itself. Clear communication, accurate
+                                information and well-organised administration can
+                                significantly shape the experience around learning.
+                            </p>
+
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Transferable capabilities</h4>
+
+                            <div class="evidence">
+                                <span class="tag">Organisation</span>
+                                <span class="tag">Stakeholder management</span>
+                                <span class="tag">Learning operations</span>
+                                <span class="tag">Data accuracy</span>
+                                <span class="tag">Communication</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CASE STUDY 02 -->
+
+            <article class="case-study">
+
+                <button class="case-header">
+
+                    <span class="case-number">02</span>
+
+                    <div>
+                        <h3>Assessing a potential international expansion</h3>
+                        <p class="case-type">
+                            Case Study · UK engineering consultancy · Practice Track Consulting Project
+                        </p>
+                    </div>
+
+                    <span class="case-icon">+</span>
+
+                </button>
+
+
+                <div class="case-content">
+
+                    <div class="case-meta">
+                        Strategic market and workforce analysis · North American expansion
+                    </div>
+
+
+                    <div class="case-grid">
+
+                        <div class="case-block">
+                            <h4>Situation</h4>
+
+                            <p>
+                                A UK engineering consultancy was exploring potential
+                                expansion into North America and required a structured
+                                assessment of strategic location options.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Challenge</h4>
+
+                            <p>
+                                The assessment needed to consider more than market
+                                attractiveness. Strategic fit, competitors, talent
+                                availability and financial considerations also needed
+                                to be considered together.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>My role</h4>
+
+                            <p>
+                                As part of the consulting team, I contributed to
+                                research, location analysis and consideration of
+                                workforce and labour-market factors.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Approach</h4>
+
+                            <ul>
+                                <li>Researched potential locations.</li>
+                                <li>Considered market attractiveness.</li>
+                                <li>Reviewed competitor positioning.</li>
+                                <li>Considered talent availability.</li>
+                                <li>Examined financial considerations.</li>
+                                <li>Applied SWOT analysis.</li>
+                            </ul>
+
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Outcome</h4>
+
+                            <p>
+                                The project produced a structured comparison of
+                                strategic considerations that could inform discussion
+                                around potential expansion options.
+                            </p>
+
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>What I learned</h4>
+
+                            <p>
+                                Strategic decisions have people implications. Market
+                                attractiveness alone does not determine whether a
+                                location is practical; access to talent, workforce
+                                conditions and organisational requirements also matter.
+                            </p>
+
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Transferable capabilities</h4>
+
+                            <div class="evidence">
+                                <span class="tag">Research</span>
+                                <span class="tag">Strategic thinking</span>
+                                <span class="tag">Workforce analysis</span>
+                                <span class="tag">Market analysis</span>
+                                <span class="tag">Problem solving</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="confidential">
+                        <strong>Confidentiality:</strong>
+                        The client organisation has not been named. Project-specific
+                        information has been presented at an appropriate level to
+                        protect client confidentiality.
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CASE STUDY 03 -->
+
+            <article class="case-study">
+
+                <button class="case-header">
+
+                    <span class="case-number">03</span>
+
+                    <div>
+                        <h3>Structuring a client-facing business problem</h3>
+                        <p class="case-type">
+                            Case Study · London-based media consultancy · Management Consulting Client Project
+                        </p>
+                    </div>
+
+                    <span class="case-icon">+</span>
+
+                </button>
+
+
+                <div class="case-content">
+
+                    <div class="case-meta">
+                        Client project · New-business challenge · Team-based consulting engagement
+                    </div>
+
+
+                    <div class="case-grid">
+
+                        <div class="case-block">
+                            <h4>Situation</h4>
+
+                            <p>
+                                A London-based media consultancy was seeking to
+                                address a new-business challenge and required a
+                                structured approach to understanding its market
+                                and opportunity.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Challenge</h4>
+
+                            <p>
+                                The project required the team to move from an
+                                initial business problem towards a practical
+                                consulting methodology with clear scope and
+                                success measures.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>My role</h4>
+
+                            <p>
+                                I worked as part of a consulting team of four to five
+                                members, contributing to research, analysis, project
+                                structuring and the final client presentation.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Approach</h4>
+
+                            <ul>
+                                <li>Researched the relevant industry environment.</li>
+                                <li>Considered competitors and target markets.</li>
+                                <li>Applied consulting frameworks.</li>
+                                <li>Defined methodology and project scope.</li>
+                                <li>Considered success measures and costs.</li>
+                            </ul>
+
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Outcome</h4>
+
+                            <p>
+                                The team developed a structured consulting proposal
+                                and presented the approach directly to the client.
+                            </p>
+
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>What I learned</h4>
+
+                            <p>
+                                Consulting requires more than identifying a problem.
+                                A useful approach needs to establish what should be
+                                investigated, how it will be investigated and how
+                                success could ultimately be understood.
+                            </p>
+
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Transferable capabilities</h4>
+
+                            <div class="evidence">
+                                <span class="tag">Client presentation</span>
+                                <span class="tag">Research</span>
+                                <span class="tag">Consulting frameworks</span>
+                                <span class="tag">Teamwork</span>
+                                <span class="tag">Commercial thinking</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="confidential">
+                        <strong>Confidentiality:</strong>
+                        The client organisation has not been named. Client-specific
+                        information has been kept confidential.
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CASE STUDY 04 -->
+
+            <article class="case-study">
+
+                <button class="case-header">
+
+                    <span class="case-number">04</span>
+
+                    <div>
+                        <h3>Supporting recruitment coordination</h3>
+                        <p class="case-type">
+                            Case Study · Influencer marketing organisation · Recruitment support
+                        </p>
+                    </div>
+
+                    <span class="case-icon">+</span>
+
+                </button>
+
+
+                <div class="case-content">
+
+                    <div class="case-grid">
+
+                        <div class="case-block">
+                            <h4>Situation</h4>
+
+                            <p>
+                                Recruitment activity required coordination across
+                                candidate sourcing, communication and interview
+                                scheduling.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Challenge</h4>
+
+                            <p>
+                                High-volume recruitment environments require
+                                organisation and timely communication so that
+                                candidates continue to receive a clear experience.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>My role</h4>
+
+                            <p>
+                                I supported recruitment activity including sourcing,
+                                candidate communication and interview coordination.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>What I learned</h4>
+
+                            <p>
+                                Recruitment is both an operational and people-facing
+                                process. Small communication gaps can affect how a
+                                candidate experiences an organisation.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Transferable capabilities</h4>
+
+                            <div class="evidence">
+                                <span class="tag">Candidate experience</span>
+                                <span class="tag">Communication</span>
+                                <span class="tag">Organisation</span>
+                                <span class="tag">Recruitment support</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CASE STUDY 05 -->
+
+            <article class="case-study">
+
+                <button class="case-header">
+
+                    <span class="case-number">05</span>
+
+                    <div>
+                        <h3>Improving the onboarding experience through HR operations</h3>
+                        <p class="case-type">
+                            Case Study · Luxury fashion organisation · Human Resources
+                        </p>
+                    </div>
+
+                    <span class="case-icon">+</span>
+
+                </button>
+
+
+                <div class="case-content">
+
+                    <div class="case-grid">
+
+                        <div class="case-block">
+                            <h4>Situation</h4>
+
+                            <p>
+                                Employee onboarding required coordination of
+                                documentation, HR system information and induction
+                                activity.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>My role</h4>
+
+                            <p>
+                                I supported onboarding processes and worked with
+                                employee information using Workday and Excel.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>What I focused on</h4>
+
+                            <ul>
+                                <li>Onboarding documentation.</li>
+                                <li>HR system information.</li>
+                                <li>Induction coordination.</li>
+                                <li>Employee lifecycle information.</li>
+                                <li>Accurate handling of HR records.</li>
+                            </ul>
+
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>What I learned</h4>
+
+                            <p>
+                                Onboarding is often an employee's first extended
+                                interaction with an organisation. Clear processes
+                                and accurate information therefore matter both
+                                operationally and from an employee-experience
+                                perspective.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Transferable capabilities</h4>
+
+                            <div class="evidence">
+                                <span class="tag">HR operations</span>
+                                <span class="tag">Workday</span>
+                                <span class="tag">Onboarding</span>
+                                <span class="tag">Data accuracy</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CASE STUDY 06 -->
+
+            <article class="case-study">
+
+                <button class="case-header">
+
+                    <span class="case-number">06</span>
+
+                    <div>
+                        <h3>Reviewing HR processes and policy requirements</h3>
+                        <p class="case-type">
+                            Case Study · Global energy organisation · Human Resources
+                        </p>
+                    </div>
+
+                    <span class="case-icon">+</span>
+
+                </button>
+
+
+                <div class="case-content">
+
+                    <div class="case-grid">
+
+                        <div class="case-block">
+                            <h4>Situation</h4>
+
+                            <p>
+                                HR processes and policies required review against
+                                relevant legal, regulatory and organisational
+                                requirements.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>My role</h4>
+
+                            <p>
+                                I supported research into employment regulations
+                                and HR practices, policy review and identification
+                                of onboarding process considerations.
+                            </p>
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Approach</h4>
+
+                            <ul>
+                                <li>Researched relevant requirements.</li>
+                                <li>Reviewed HR policy information.</li>
+                                <li>Considered onboarding processes.</li>
+                                <li>Documented process pain points.</li>
+                                <li>Supported confidential HR queries.</li>
+                            </ul>
+
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>What I learned</h4>
+
+                            <p>
+                                HR policies are most useful when they can be
+                                understood and applied in practice. Reviewing
+                                policy therefore requires attention to both
+                                compliance requirements and the employee experience.
+                            </p>
+
+                        </div>
+
+
+                        <div class="case-block">
+                            <h4>Transferable capabilities</h4>
+
+                            <div class="evidence">
+                                <span class="tag">Policy review</span>
+                                <span class="tag">Research</span>
+                                <span class="tag">Compliance awareness</span>
+                                <span class="tag">Process improvement</span>
+                                <span class="tag">Confidentiality</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     LEARNING JOURNEY
+========================= -->
+
+<section id="learning">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-number">
+                05 / Learning journey
+            </div>
+
+            <div>
+                <h2>From psychology to HR and consulting</h2>
+
+                <p>
+                    The different stages of my education and experience have
+                    contributed to the way I understand people and organisations.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="journey">
+
+            <article class="journey-item">
+
+                <span class="year">FOUNDATION</span>
+
+                <h3>Psychology</h3>
+
+                <p>
+                    Studying psychology developed my interest in human behaviour,
+                    individual differences and the factors that influence how
+                    people respond to different environments.
+                </p>
+
+            </article>
+
+
+            <article class="journey-item">
+
+                <span class="year">APPLICATION</span>
+
+                <h3>Human Resources</h3>
+
+                <p>
+                    HR internships allowed me to connect academic understanding
+                    with practical exposure to employee processes, recruitment,
+                    onboarding, learning and HR administration.
+                </p>
+
+            </article>
+
+
+            <article class="journey-item">
+
+                <span class="year">EXPANSION</span>
+
+                <h3>Consulting</h3>
+
+                <p>
+                    Consulting projects developed my ability to investigate
+                    unfamiliar problems, structure information and consider
+                    business and workforce implications together.
+                </p>
+
+            </article>
+
+
+            <article class="journey-item">
+
+                <span class="year">NOW</span>
+
+                <h3>People and business</h3>
+
+                <p>
+                    I am particularly interested in roles where people practices,
+                    operational processes and organisational requirements need to
+                    work together effectively.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONSULTING THINKING
+========================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-number">
+                06 / Consulting
+            </div>
+
+            <div>
+                <h2>How I approach a problem</h2>
+
+                <p>
+                    My consulting experience has encouraged me to think beyond
+                    the immediate problem and consider the wider context.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="consulting-process">
+
+            <div class="process-step">
+                <span>01</span>
+                <h3>Understand</h3>
+            </div>
+
+            <div class="process-step">
+                <span>02</span>
+                <h3>Research</h3>
+            </div>
+
+            <div class="process-step">
+                <span>03</span>
+                <h3>Analyse</h3>
+            </div>
+
+            <div class="process-step">
+                <span>04</span>
+                <h3>Structure</h3>
+            </div>
+
+            <div class="process-step">
+                <span>05</span>
+                <h3>Recommend</h3>
+            </div>
+
+            <div class="process-step">
+                <span>06</span>
+                <h3>Communicate</h3>
+            </div>
+
+        </div>
+
+
+        <div class="about-main">
+
+            <p>
+                I have learned that a structured problem-solving process is
+                particularly useful when the answer is not immediately obvious.
+                Research helps establish context, analysis helps identify what
+                matters and structured communication helps turn findings into
+                something that others can use.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     REFLECTIONS
+========================= -->
+
+<section id="reflections">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-number">
+                07 / Reflections
+            </div>
+
+            <div>
+                <h2>What I have learned from experience</h2>
+
+                <p>
+                    Short reflections on ideas that have become more meaningful
+                    through practical experience.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="reflection-grid">
+
+
+            <article class="reflection">
+
+                <h3>HR administration is not just administration.</h3>
+
+                <p>
+                    Accurate employee information, documentation, onboarding
+                    processes and timely follow-through form part of the employee
+                    experience. Operational detail can therefore have a much
+                    wider impact than the task itself initially suggests.
+                </p>
+
+            </article>
+
+
+            <article class="reflection">
+
+                <h3>A candidate experience begins before the interview.</h3>
+
+                <p>
+                    Recruitment coordination has shown me that communication,
+                    clarity and responsiveness influence how candidates experience
+                    an organisation even before they enter an interview room.
+                </p>
+
+            </article>
+
+
+            <article class="reflection">
+
+                <h3>Learning participation depends on the experience around learning.</h3>
+
+                <p>
+                    A well-designed learning programme still requires effective
+                    communication, coordination, access to information and
+                    follow-through. The operational experience around learning
+                    can therefore influence participation and engagement.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ENTREPRENEURSHIP
+========================= -->
+
+<section id="entrepreneurship">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-number">
+                08 / Entrepreneurship
+            </div>
+
+            <div>
+                <h2>The Handmade Edit</h2>
+
+                <p>
+                    A small creative venture that gave me experience beyond
+                    traditional employment.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="entrepreneurship">
+
+            <div>
+
+                <h3>Building something independently</h3>
+
+            </div>
+
+
+            <div>
+
+                <p>
+                    The Handmade Edit was a small creative-products venture that
+                    I founded and operated independently. I managed the process
+                    from product development and sourcing through customer
+                    communication, production, quality control, packaging and
+                    fulfilment.
+                </p>
+
+                <p style="margin-top:22px;">
+                    The venture included products such as beaded keychains,
+                    ceramic candle stands, incense stick holders, stickers,
+                    personalised Spotify music plaques and handmade candles.
+                </p>
+
+                <p style="margin-top:22px;">
+                    Although the venture is currently closed, the experience
+                    remains valuable because it required ownership of decisions,
+                    attention to customer expectations and the ability to manage
+                    several parts of a small operation independently.
+                </p>
+
+
+                <div class="transfer-list">
+
+                    <div>Customer-centred thinking</div>
+                    <div>Ownership and accountability</div>
+                    <div>Managing competing priorities</div>
+                    <div>Quality control</div>
+                    <div>Resource management</div>
+                    <div>Communication</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROFESSIONAL POSITIONING
+========================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-number">
+                09 / Looking ahead
+            </div>
+
+            <div>
+                <h2>Where I want to contribute</h2>
+
+                <p>
+                    The types of HR environments in which I would like to continue
+                    developing my experience.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-main">
+
+                <p>
+                    I am interested in early-career opportunities that allow me
+                    to continue developing across HR operations, people operations,
+                    learning and development, talent acquisition and HR consulting.
+                </p>
+
+                <p>
+                    I am particularly interested in environments where I can
+                    combine organisation, stakeholder communication, analytical
+                    thinking and a genuine interest in employee experience.
+                </p>
+
+            </div>
+
+
+            <aside class="about-aside">
+
+                <h3>Professional interests</h3>
+
+                <ul>
+                    <li>People operations</li>
+                    <li>HR service delivery</li>
+                    <li>Learning operations</li>
+                    <li>Employee experience</li>
+                    <li>Talent acquisition</li>
+                    <li>HR transformation and consulting</li>
+                </ul>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <div class="contact-box">
+
+            <div>
+
+                <div class="eyebrow">
+                    Contact
+                </div>
+
+                <h2>Let's connect.</h2>
+
+                <p>
+                    For HR opportunities, professional conversations or
+                    collaboration, I would be pleased to connect.
+                </p>
+
+            </div>
+
+
+            <div class="contact-links">
+
+                <a class="contact-link" href="mailto:srilaxmimenon02@gmail.com">
+                    <small>Email</small>
+                    srilaxmimenon02@gmail.com
+                </a>
+
+                <a class="contact-link"
+                   href="https://www.linkedin.com/in/srilaxmismenon20/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <small>LinkedIn</small>
+                    linkedin.com/in/srilaxmismenon20
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <span>© 2026 Srilaxmi Menon</span>
+
+        <span>
+            Human Resources · People · Consulting
+        </span>
+
+    </div>
+
+</footer>
+
+
+<button class="back-top" id="backTop" aria-label="Back to top">
+    ↑
+</button>
+
+
+<script>
+
+/* =========================
+   MOBILE NAVIGATION
+========================= */
+
+const menuButton = document.getElementById("menuButton");
+const navLinks = document.getElementById("navLinks");
+
+menuButton.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+    });
+});
+
+
+/* =========================
+   ACCORDIONS
+========================= */
+
+document.querySelectorAll(".capability-header").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const content = button.nextElementSibling;
+        const icon = button.querySelector("span");
+
+        content.classList.toggle("open");
+
+        if (content.classList.contains("open")) {
+            icon.textContent = "−";
+        } else {
+            icon.textContent = "+";
+        }
+
+    });
+
+});
+
+
+document.querySelectorAll(".case-header").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const content = button.nextElementSibling;
+        const icon = button.querySelector(".case-icon");
+
+        content.classList.toggle("open");
+
+        if (content.classList.contains("open")) {
+            icon.textContent = "−";
+        } else {
+            icon.textContent = "+";
+        }
+
+    });
+
+});
+
+
+/* =========================
+   SCROLL PROGRESS
+========================= */
+
+window.addEventListener("scroll", () => {
+
+    const scrollTop = window.scrollY;
+    const documentHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+
+    const progress =
+        documentHeight > 0
+        ? (scrollTop / documentHeight) * 100
+        : 0;
+
+    document.getElementById("progress").style.width = progress + "%";
+
+
+    /* Back to top */
+
+    const backTop = document.getElementById("backTop");
+
+    if (scrollTop > 500) {
+        backTop.style.display = "block";
+    } else {
+        backTop.style.display = "none";
+    }
+
+});
+
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+document.getElementById("backTop").addEventListener("click", () => {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
+
+</script>
+
+</body>
+</html>
